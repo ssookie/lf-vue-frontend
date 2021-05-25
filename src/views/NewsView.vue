@@ -3,7 +3,11 @@
         <p>News</p>
         <p v-for="news in this.newsList" :key="news.id">
             <a :href="news.url">{{ news.title }}</a><br>
-            <small>{{ news.time_ago }} by {{ news.domain }}</small>
+            <small>{{ news.time_ago }} by 
+              <!-- {{ news.domain }} -->
+              <!-- NewsView에서 User정보를 클릭시 UserView로 이동하게끔 처리. -->
+              <router-link :to="'/user/' + news.user">{{ news.user }}</router-link>
+            </small>
         </p>
     </div>
 </template>

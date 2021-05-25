@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import NewsView from '../views/NewsView.vue';
 import AskView from '../views/AskView.vue';
 import JobsView from '../views/JobsView.vue';
+import UserView from '../views/UserView.vue';
 
 Vue.use(VueRouter);
 
@@ -27,5 +28,10 @@ export default new VueRouter({
             path: '/jobs',
             component: JobsView,
         },
+        {
+            // Router에 라우팅 정보 추가.
+            path: '/user/:id',
+            component: UserView,
+        }
     ]
 });
