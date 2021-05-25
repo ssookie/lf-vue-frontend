@@ -1,6 +1,6 @@
 # lf-vue-frontend
 
-회사 vue.js 사용을 위한 간단한 프로젝트 실습입니다.
+회사에서 vue.js를 사용하기 위한 간단한 프로젝트 실습입니다.
 
 ## Repository from 
 * https://github.com/wybaek31/lf-vue-study
