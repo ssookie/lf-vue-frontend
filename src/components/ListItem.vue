@@ -22,7 +22,7 @@
         </small>
       </div>
     </li>
-  </ul>
+  </ul> 
 </template>
 
 <script>

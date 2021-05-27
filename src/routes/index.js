@@ -4,11 +4,12 @@ import NewsView from '../views/NewsView.vue';
 import AskView from '../views/AskView.vue';
 import JobsView from '../views/JobsView.vue';
 import UserView from '../views/UserView.vue';
+import DataGridView from '../views/DataGridView.vue';
 
 Vue.use(VueRouter);
 
 export default new VueRouter({
-    mode: 'history',
+    mode: 'history', // 페이지를 다시 로드하지 않고도 URL 탐색 가능
     routes: [
         {
             path: '/',
@@ -32,6 +33,10 @@ export default new VueRouter({
             // Router에 라우팅 정보 추가.
             path: '/user/:id',
             component: UserView,
+        },
+        {
+            path: '/dataGrid',
+            component: DataGridView,
         }
     ]
 });
