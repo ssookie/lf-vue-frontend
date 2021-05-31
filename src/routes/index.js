@@ -5,6 +5,8 @@ import AskView from '../views/AskView.vue';
 import JobsView from '../views/JobsView.vue';
 import UserView from '../views/UserView.vue';
 import DataGridView from '../views/DataGridView.vue';
+import ChartView from '../views/ChartView.vue';
+import ChartContainer from '../views/ChartContainer.vue';
 
 Vue.use(VueRouter);
 
@@ -37,6 +39,14 @@ export default new VueRouter({
         {
             path: '/dataGrid',
             component: DataGridView,
+        },
+        {
+            path: '/localChart',
+            component: ChartView,
+        },
+        {
+            path: '/apiChart',
+            component: ChartContainer,
         }
     ]
 });

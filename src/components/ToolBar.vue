@@ -4,6 +4,8 @@
         <router-link to="/ask">Ask</router-link>
         <router-link to="/jobs">Jobs</router-link>
         <router-link to="/dataGrid">DataGrid</router-link>
+        <router-link to="/localChart">Chart-local</router-link>
+        <router-link to="/apiChart">Chart-API</router-link>
     </div>
 </template>
 
